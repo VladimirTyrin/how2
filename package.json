@@ -36,7 +36,9 @@
   },
   "scripts": {
     "test": "mocha test",
-    "start": "./bin/how2 concatenate two files"
+    "start": "./bin/how2 concatenate two files",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "blessed": "^0.1.81",
@@ -53,10 +55,12 @@
     "openurl": "^1.1.1",
     "request": "^2.69.0",
     "simple-spinner": "0.0.5",
-    "yargs": "^4.1.0"
+    "yargs": "^4.1.0",
+    "snyk": "^1.88.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^2.4.5"
-  }
+  },
+  "snyk": true
 }
